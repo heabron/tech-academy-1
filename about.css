@@ -1,0 +1,11 @@
+.img-real {
+	width: calc(min(100%, 500px));
+	rotate: -90deg;
+	margin: 0 auto;
+}
+
+.image-wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
