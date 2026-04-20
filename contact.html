@@ -12,22 +12,23 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="./story.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="./about.css"
+			href="./contact.css"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
 			href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
 		/>
+
 		<link
 			rel="stylesheet"
 			type="text/css"
 			href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
 		/>
+		<script
+			src="./contact.js"
+			defer
+		></script>
 		<title>História - As Aventuras de Lili</title>
 	</head>
 
@@ -78,51 +79,57 @@
 			</div>
 		</header>
 		<main>
-			<div class="container story-content">
-				<h1>Sobre o projeto</h1>
-				<p>
-					“As Aventuras de Lili” é um projeto que apresenta a história de uma
-					gatinha baseada em acontecimentos reais.
-				</p>
-				<p>
-					A ideia surgiu a partir da vivência com a Lili, que foi encontrada
-					ainda filhote em um ambiente aberto próximo a uma faculdade. A partir
-					disso, o projeto busca transformar essa trajetória em uma narrativa
-					simples e envolvente.
-				</p>
-				<p>As personagens do projeto são inspiradas em animais reais.</p>
-				<div class="image-wrapper">
-					<img
-						class="img-real"
-						src="public/lili_e_freeba_real.jpg"
-						alt="Imagem da Lili e Freeba"
-					/>
-				</div>
+			<div class="container">
+				<h1>Contato</h1>
 
-				<p>
-					A história acompanha o crescimento da Lili, desde um começo difícil
-					até a adaptação em um novo lar, trazendo temas como sobrevivência,
-					confiança e amizade.
-				</p>
-				<p>
-					O projeto foi pensado principalmente para crianças e jovens que gostam
-					de histórias leves, com personagens carismáticos e fáceis de se
-					conectar.
-				</p>
-				<p>
-					A principal proposta é apresentar uma história simples e envolvente,
-					mostrando como pequenas experiências podem se transformar em grandes
-					mudanças na vida de um personagem.
-				</p>
-				<p>
-					Além da parte narrativa, o site também aplica conceitos de experiência
-					do usuário, com foco em uma navegação clara, visual consistente e
-					leitura simples.
-				</p>
-				<p>
-					A ideia é que qualquer pessoa consiga acessar o site, entender a
-					proposta rapidamente e navegar sem dificuldade.
-				</p>
+				<form id="formContato">
+					<div class="field">
+						<label for="nome">Seu nome</label>
+						<input
+							type="text"
+							id="nome"
+							placeholder="Seu nome"
+						/>
+
+						<p
+							class="error-message"
+							id="nomeError"
+						></p>
+					</div>
+
+					<div class="field">
+						<label for="email">Seu email</label>
+						<input
+							type="email"
+							id="email"
+							placeholder="Seu email"
+						/>
+						<p
+							class="error-message"
+							id="emailError"
+						></p>
+					</div>
+
+					<div class="field">
+						<label for="mensagem">Sua mensagem</label>
+						<textarea
+							id="mensagem"
+							placeholder="Sua mensagem"
+						></textarea>
+						<p
+							class="error-message"
+							id="mensagemError"
+						></p>
+					</div>
+					<button
+						class="button primary"
+						type="submit"
+					>
+						Enviar
+					</button>
+				</form>
+
+				<pre id="feedback"></pre>
 			</div>
 		</main>
 		<footer class="footer">

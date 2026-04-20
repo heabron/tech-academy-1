@@ -1,0 +1,57 @@
+main {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	padding: 20px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.error-message {
+	color: red;
+	font-size: small;
+	margin-top: -0.5rem;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+input {
+	padding: 0.25rem 0.5rem;
+	font-size: medium;
+}
+
+textarea {
+	padding: 0.25rem 0.5rem;
+	font-size: medium;
+	resize: vertical;
+}
+
+label {
+	font-size: medium;
+
+	&::after {
+		content: '*';
+		color: red;
+	}
+}
+
+.button {
+	font-size: medium;
+	padding: 0.25rem 2rem;
+	width: fit-content;
+	align-self: flex-end;
+}
