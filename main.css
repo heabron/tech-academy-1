@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Englebert&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	max-width: 100vw;
+}
+
+h1,
+h2 {
+	font-family: 'Englebert', cursive;
+}
+
+p,
+a {
+	font-family: 'Winky Sans', cursive;
+	font-size: 18px;
+	line-height: 1.6;
 }
 
 html,
@@ -64,7 +78,7 @@ nav ul li {
 
 nav ul li a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-size: 18px;
 	transition: all 0.3s ease;
 	position: relative;

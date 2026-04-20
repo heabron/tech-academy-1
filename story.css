@@ -1,0 +1,41 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 24px;
+}
+
+.container section {
+	margin-top: 60px;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+}
+
+.story-content {
+	text-align: justify;
+}
+
+.ph-cloud-lightning {
+	color: #fd8cc9;
+}
+
+.ph-rainbow-cloud {
+	color: #fee82e;
+}
+
+.ph-house {
+	color: #57f0cd;
+}
+
+.ph-heart {
+	color: #fd3b47;
+}
