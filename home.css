@@ -1,0 +1,92 @@
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+main section {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.hero {
+	background-size: cover;
+	background-position: center;
+	background-image: url('public/hero-bg.png');
+
+	color: #fff;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 0;
+}
+
+.hero::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	background: linear-gradient(to top, #101010, rgba(0, 0, 0, 0));
+	z-index: 1;
+}
+
+.hero > * {
+	position: relative;
+}
+
+.hero .header {
+	width: 100%;
+	text-shadow: 0 2px 4px rgba(0, 0, 0);
+}
+
+nav ul li a {
+	color: white;
+}
+
+.hero .container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+
+	@media (min-width: 768px) {
+		font-size: 4rem;
+	}
+}
+
+.hero p {
+	font-size: 1rem;
+	margin-bottom: 2rem;
+
+	@media (min-width: 768px) {
+		font-size: 1.5rem;
+	}
+}
+
+.hero .hero-actions {
+	justify-content: center;
+	display: flex;
+	gap: 8px;
+	@media (min-width: 768px) {
+		justify-content: center;
+		gap: 16px;
+	}
+}

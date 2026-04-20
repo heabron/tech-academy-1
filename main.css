@@ -10,6 +10,8 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	background-color: #101010;
+	color: white;
 }
 
 .container {
@@ -27,7 +29,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	padding: 20px 20px 0;
 
 	@media (min-width: 768px) {
 		flex-direction: row;
@@ -52,7 +54,7 @@ nav ul {
 	align-items: center;
 
 	@media (min-width: 768px) {
-		gap: 24px;
+		gap: 32px;
 	}
 }
 
@@ -87,17 +89,13 @@ nav ul li a:hover {
 	}
 }
 
-.main {
-	flex: 1;
-	background-color: red;
-}
-
 footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
+	border-top: 2px solid #333;
 
 	@media (min-width: 768px) {
 		padding: 20px 40px;
@@ -143,7 +141,7 @@ footer .footer-content ul li {
 
 footer .footer-content ul li a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	transition: all 0.3s ease;
 
 	&:hover {
@@ -153,4 +151,36 @@ footer .footer-content ul li a {
 
 footer p {
 	text-align: center;
+}
+
+.button {
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 4px;
+	text-decoration: none;
+	font-size: 1rem;
+	height: fit-content;
+	transition: background-color 0.3s ease;
+
+	@media (min-width: 768px) {
+		padding: 0.75rem 1.5rem;
+		font-size: 1.25rem;
+	}
+}
+
+.primary {
+	background-color: #4caf50;
+
+	&:hover {
+		background-color: #388e3c;
+	}
+}
+
+.secondary {
+	background-color: #2196f3;
+
+	&:hover {
+		background-color: #1976d2;
+	}
 }
